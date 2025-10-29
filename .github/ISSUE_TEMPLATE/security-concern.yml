@@ -7,7 +7,7 @@ body:
     attributes:
       value: |
         ⚠️ **Security Issues**: If this is a critical security vulnerability, please report it privately through GitHub Security Advisories or contact the security team directly.
-        
+
   - type: textarea
     id: description
     attributes:
@@ -16,7 +16,7 @@ body:
       placeholder: Describe the security concern...
     validations:
       required: true
-      
+
   - type: dropdown
     id: severity
     attributes:
@@ -29,7 +29,7 @@ body:
         - Critical
     validations:
       required: true
-      
+
   - type: checkboxes
     id: scope
     attributes:
@@ -40,7 +40,7 @@ body:
         - label: Multiple repositories
         - label: Organization infrastructure
         - label: Dependencies
-        
+
   - type: textarea
     id: impact
     attributes:
@@ -49,7 +49,7 @@ body:
       placeholder: What could happen?
     validations:
       required: true
-      
+
   - type: textarea
     id: mitigation
     attributes:
