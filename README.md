@@ -1,2 +1,5 @@
 # petasum-super-petasum
-hat on a hat, galerum super galerum, quidquid superat, ad abundantiam, et cetera. 
+galerum super galerum,
+quidquid superat,
+ad abundantiam,
+hat_on-hat, &c.
