@@ -4,6 +4,9 @@ on:
   issues:
     types: [opened, labeled]
 
+permissions:
+  issues: write
+
 jobs:
   notify:
     runs-on: ubuntu-latest
@@ -17,9 +20,12 @@ jobs:
 
       - name: Extract issue details
         id: issue_details
+        env:
+          ISSUE_TITLE: ${{ github.event.issue.title }}
         run: |
           echo "issue_number=${{ github.event.issue.number }}" >> $GITHUB_OUTPUT
-          echo "issue_title=${{ github.event.issue.title }}" >> $GITHUB_OUTPUT
+          # Use environment variable to avoid code injection
+          echo "issue_title=${ISSUE_TITLE}" >> $GITHUB_OUTPUT
           echo "issue_url=${{ github.event.issue.html_url }}" >> $GITHUB_OUTPUT
           echo "issue_author=${{ github.event.issue.user.login }}" >> $GITHUB_OUTPUT
 
@@ -81,15 +87,22 @@ jobs:
             console.log('Project integration can be configured with organization projects');
 
       - name: Create notification summary
+        env:
+          ISSUE_TITLE: ${{ github.event.issue.title }}
+          ISSUE_AUTHOR: ${{ steps.issue_details.outputs.issue_author }}
+          ISSUE_NUMBER: ${{ steps.issue_details.outputs.issue_number }}
+          ISSUE_URL: ${{ steps.issue_details.outputs.issue_url }}
+          PRIORITY: ${{ steps.categorize.outputs.priority }}
+          LABELS: ${{ join(github.event.issue.labels.*.name, ', ') }}
         run: |
           echo "## 📢 Organization-Wide Issue Notification" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
-          echo "**Issue:** #${{ steps.issue_details.outputs.issue_number }} - ${{ github.event.issue.title }}" >> $GITHUB_STEP_SUMMARY
-          echo "**Author:** @${{ steps.issue_details.outputs.issue_author }}" >> $GITHUB_STEP_SUMMARY
-          echo "**Priority:** ${{ steps.categorize.outputs.priority }}" >> $GITHUB_STEP_SUMMARY
-          echo "**Labels:** ${{ join(github.event.issue.labels.*.name, ', ') }}" >> $GITHUB_STEP_SUMMARY
+          echo "**Issue:** #${ISSUE_NUMBER} - ${ISSUE_TITLE}" >> $GITHUB_STEP_SUMMARY
+          echo "**Author:** @${ISSUE_AUTHOR}" >> $GITHUB_STEP_SUMMARY
+          echo "**Priority:** ${PRIORITY}" >> $GITHUB_STEP_SUMMARY
+          echo "**Labels:** ${LABELS}" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
-          echo "🔗 [View Issue](${{ steps.issue_details.outputs.issue_url }})" >> $GITHUB_STEP_SUMMARY
+          echo "🔗 [View Issue](${ISSUE_URL})" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
           echo "### Notification Methods" >> $GITHUB_STEP_SUMMARY
           echo "- Comment added to issue" >> $GITHUB_STEP_SUMMARY
