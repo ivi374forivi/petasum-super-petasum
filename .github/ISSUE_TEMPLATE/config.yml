@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 💬 Organization Discussion
+    url: https://github.com/orgs/ivi374forivi/discussions
+    about: For general organization-wide discussions and questions
+  - name: 📚 Documentation
+    url: https://github.com/ivi374forivi/petasum-super-petasum/blob/main/README.md
+    about: Check the documentation for guidance on filing issues

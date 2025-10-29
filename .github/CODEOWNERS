@@ -1,0 +1,19 @@
+# CODEOWNERS for Organization-Wide Issue Repository
+# This file defines who should be notified for different types of issues
+# Learn more: https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners
+
+# Default owners for everything in the repo
+# These users will be requested for review when someone opens a pull request
+* @ivi374forivi/org-admins
+
+# Issue templates - notify when templates are modified
+/.github/ISSUE_TEMPLATE/ @ivi374forivi/org-admins
+
+# Workflows - notify when automation is changed
+/.github/workflows/ @ivi374forivi/org-admins
+
+# Documentation - notify documentation team
+*.md @ivi374forivi/documentation-team
+
+# Labels configuration
+/.github/labels.yml @ivi374forivi/org-admins
