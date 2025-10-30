@@ -1,0 +1,40 @@
+# OS files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# Editor directories
+.vscode/
+.idea/
+*.sublime-*
+
+# Temporary files
+*.tmp
+*.bak
+.~lock.*
+
+# Local development
+.env
+.env.local
+*.local
+
+# Logs
+*.log
+logs/
+
+# Dependencies (if any get added in future)
+node_modules/
+vendor/
+
+# Build artifacts (if any)
+dist/
+build/
+*.pyc
+__pycache__/
+
+# Test coverage
+coverage/
+.coverage
+*.cover
