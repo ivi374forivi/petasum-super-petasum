@@ -2,6 +2,10 @@
 # This file defines who should be notified for different types of issues
 # Learn more: https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners
 
+# NOTE: Update the team names below to match actual teams in your organization.
+# The teams referenced here (@ivi374forivi/org-admins and @ivi374forivi/documentation-team)
+# must be created in the organization settings before this file will function properly.
+
 # Default owners for everything in the repo
 # These users will be requested for review when someone opens a pull request
 * @ivi374forivi/org-admins

@@ -94,14 +94,14 @@ Edit `.github/CODEOWNERS`:
 1. Create organization-level project
 2. Add automation to include org-wide issues
 3. Configure views for different teams
-4. See [PROJECTS.md](.github/PROJECTS.md) for details
+4. See [PROJECTS.md](PROJECTS.md) for details
 
 ### 3. Enable Discussions (Optional)
 
 1. Go to repository Settings
 2. Enable Discussions
 3. Set up categories
-4. See [DISCUSSIONS.md](.github/DISCUSSIONS.md) for details
+4. See [DISCUSSIONS.md](DISCUSSIONS.md) for details
 
 ### 4. Configure Labels
 
@@ -192,8 +192,8 @@ Or apply manually through GitHub UI using [labels.yml](.github/labels.yml) as re
 3. Configure team notifications
 
 ### Administrators
-1. Review [PROJECTS.md](.github/PROJECTS.md) for project setup
-2. Review [DISCUSSIONS.md](.github/DISCUSSIONS.md) for discussion setup
+1. Review [PROJECTS.md](PROJECTS.md) for project setup
+2. Review [DISCUSSIONS.md](DISCUSSIONS.md) for discussion setup
 3. Customize templates for your organization's needs
 4. Train teams on the process
 
@@ -201,10 +201,10 @@ Or apply manually through GitHub UI using [labels.yml](.github/labels.yml) as re
 
 - [Complete Documentation](../README.md)
 - [Issue Templates](./ISSUE_TEMPLATE/)
-- [GitHub Projects Guide](.github/PROJECTS.md)
-- [Discussions Guide](.github/DISCUSSIONS.md)
-- [Contributing Guide](.github/CONTRIBUTING.md)
-- [Redirect Template Usage](.github/REDIRECT_TEMPLATE_USAGE.md)
+- [GitHub Projects Guide](PROJECTS.md)
+- [Discussions Guide](DISCUSSIONS.md)
+- [Contributing Guide](CONTRIBUTING.md)
+- [Redirect Template Usage](REDIRECT_TEMPLATE_USAGE.md)
 
 ---
 

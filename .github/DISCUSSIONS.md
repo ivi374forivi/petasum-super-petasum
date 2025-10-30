@@ -160,16 +160,29 @@ Create discussion templates in `.github/DISCUSSION_TEMPLATE/`:
 
 ```yaml
 # .github/DISCUSSION_TEMPLATE/idea.yml
+# Note: Discussion templates may not be supported in all GitHub plans
+# and use a different structure than issue templates
 title: "[IDEA] "
 labels: ["idea"]
-body: |
-  ## Idea Description
-  
-  ## Expected Benefits
-  
-  ## Potential Challenges
-  
-  ## Additional Context
+```
+
+Example structure (if supported):
+```yaml
+title: "[IDEA] "
+labels: ["idea"]
+inputs:
+  idea_description:
+    description: "Describe your idea"
+    required: true
+  expected_benefits:
+    description: "What are the expected benefits?"
+    required: false
+  potential_challenges:
+    description: "List any potential challenges"
+    required: false
+  additional_context:
+    description: "Any additional context?"
+    required: false
 ```
 
 ## Metrics and Insights

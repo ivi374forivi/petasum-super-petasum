@@ -70,7 +70,7 @@ jobs:
             message += `---\n`;
             message += `*This notification was automatically generated. Teams can subscribe to notifications by watching this repository.*`;
 
-            github.rest.issues.createComment({
+            await github.rest.issues.createComment({
               issue_number: context.issue.number,
               owner: context.repo.owner,
               repo: context.repo.repo,
