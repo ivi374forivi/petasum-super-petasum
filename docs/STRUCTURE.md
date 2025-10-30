@@ -14,8 +14,10 @@ petasum-super-petasum/
 │       └── add-to-org-project.yml    # Auto-add issues to org Project
 ├── docs/
 │   ├── QUICK_REFERENCE.md            # Quick reference guide
+│   ├── STRUCTURE.md                  # This file - repository structure documentation
 │   └── examples/
 │       └── README.md                 # Usage examples
+├── COMMANDMENTS.md                   # Organization principles and commandments
 ├── CONTRIBUTING.md                   # Contribution guidelines
 ├── README.md                         # Main documentation
 ├── SECURITY.md                       # Security policies
@@ -91,6 +93,14 @@ Guidelines for:
 - Contributing improvements
 - Customization guidelines
 - Code quality standards
+
+#### `COMMANDMENTS.md`
+Organization principles and commandments inspired by:
+- Semgrep philosophy (privacy, open source, performance)
+- TensorFlow principles (quality, collaboration, transparency)
+- Schema.org standards (interoperability, clarity, inclusivity)
+- Application to organization-wide issue tracking
+- Living guidelines for continuous improvement
 
 #### `SECURITY.md`
 Security information including:
