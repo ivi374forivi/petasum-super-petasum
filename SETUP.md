@@ -187,6 +187,7 @@ For questions or issues with this setup:
 - Open a discussion in this repository
 - Check the README for additional context
 - Review GitHub's documentation on issue templates and Projects
+- See [COMMANDMENTS.md](COMMANDMENTS.md) for guiding principles
 
 ## Next Steps
 

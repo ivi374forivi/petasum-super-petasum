@@ -39,6 +39,7 @@ When customizing these templates for your organization:
 - Follow GitHub's issue template and workflow syntax
 - Test templates in a real repository before submitting PRs
 - Document any new features or changes in the README
+- Adhere to the principles outlined in [COMMANDMENTS.md](COMMANDMENTS.md)
 
 ## Questions?
 

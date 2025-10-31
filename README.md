@@ -6,6 +6,18 @@ A template repository for organization-wide GitHub issue tracking infrastructure
 
 This repository provides ready-to-use templates and workflows for managing organization-wide issues, initiatives, incidents, and RFCs across multiple repositories within a GitHub organization.
 
+## Guiding Principles
+
+This repository follows a set of [Organization Commandments](COMMANDMENTS.md) inspired by best practices from leading open-source projects including Semgrep, TensorFlow, and Schema.org. These principles emphasize:
+- Free & open source collaboration
+- Privacy & security first
+- Beginner-friendly, human-readable documentation
+- Quality over quantity
+- Transparency and inclusivity
+- Interoperability and stability
+
+See [COMMANDMENTS.md](COMMANDMENTS.md) for the complete set of principles that guide our approach.
+
 ## What's Included
 
 ### Issue Templates
@@ -98,6 +110,8 @@ your-org/
 ## Reference
 
 This repository implements the patterns and templates described in the `copilot-chat-response-transcript` file, which provides comprehensive guidance on organization-wide GitHub issue management.
+
+For guiding principles and commandments that inform these templates, see [COMMANDMENTS.md](COMMANDMENTS.md).
 
 ## License
 
