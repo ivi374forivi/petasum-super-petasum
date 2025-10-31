@@ -3,21 +3,20 @@
 # Learn more: https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners
 
 # NOTE: Update the team names below to match actual teams in your organization.
-# The teams referenced here (@ivi374forivi/org-admins and @ivi374forivi/documentation-team)
-# must be created in the organization settings before this file will function properly.
+# These teams must be created in the organization settings before this file will function properly.
 
 # Default owners for everything in the repo
 # These users will be requested for review when someone opens a pull request
-* @ivi374forivi/org-admins
+* @ivi374forivi/engineering
 
 # Issue templates - notify when templates are modified
-/.github/ISSUE_TEMPLATE/ @ivi374forivi/org-admins
+/.github/ISSUE_TEMPLATE/ @ivi374forivi/engineering
 
 # Workflows - notify when automation is changed
-/.github/workflows/ @ivi374forivi/org-admins
+/.github/workflows/ @ivi374forivi/engineering
 
 # Documentation - notify documentation team
-*.md @ivi374forivi/documentation-team
+*.md @ivi374forivi/docs
 
 # Labels configuration
-/.github/labels.yml @ivi374forivi/org-admins
+/.github/labels.yml @ivi374forivi/engineering
