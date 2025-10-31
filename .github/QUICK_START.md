@@ -112,7 +112,7 @@ Apply labels to this repository:
 github-label-sync --labels .github/labels.yml ivi374forivi/petasum-super-petasum
 ```
 
-Or apply manually through GitHub UI using [labels.yml](.github/labels.yml) as reference.
+Or apply manually through GitHub UI using [labels.yml](labels.yml) as reference.
 
 ## Common Workflows
 
